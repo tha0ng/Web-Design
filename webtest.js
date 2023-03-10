@@ -243,6 +243,9 @@ document.addEventListener('mousemove', e => {
   cursorFollower.style.top = e.pageY + 'px';
 });
 
+
+
+
 //reviewpaper images
 const reviewpapers = document.querySelectorAll('.reviewpaper');
 
