@@ -216,7 +216,7 @@ h3 {
 }
 
 #holbein {
-  background: none 50% no-repeat fixed;
+  background: none;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
