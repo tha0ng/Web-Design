@@ -1,8 +1,4 @@
 
-
-
-
-
 //hover to reveal information on text
 const h = document.getElementById('h');
 const o = document.getElementById('o');
@@ -52,9 +48,6 @@ imageZoom.addEventListener('mousemove', (e) => {
   image.style.transformOrigin = `${x}% ${y}%`;
 });
 
-
-
-
 //for previous and next buttons that go through sections
 const prevBtns = document.querySelectorAll('.prev-btn');
 const nextBtns = document.querySelectorAll('.next-btn');
@@ -102,27 +95,6 @@ topBtn.addEventListener("click", () => {
 
 
 
-//zoom image for grid
-//const images = document.querySelectorAll('.grid-item img');
-
-//images.forEach(image => {
-  //image.addEventListener('mousemove', (e) => {
-    //const x = e.pageX - image.offsetLeft;
-    //const y = e.pageY - image.offsetTop;
-    //const translateX = ((image.offsetWidth - (x * 2)) / 100) * 5;
-    //const translateY = ((image.offsetHeight - (y * 2)) / 100) * 5;
-
-    //image.style.transform = `translate(${translateX}px, ${translateY}px) scale(1.2)`;
-  //});
-
-  //image.addEventListener('mouseleave', () => {
-    //image.style.transform = 'none';
-  //});
-//});
-
-
-
-
 //image tubeholbein12 fade in
 const fadeImage = () => {
   const imageFade = document.querySelector('.image-fade');
@@ -137,7 +109,6 @@ const fadeImage = () => {
 }
 
 window.addEventListener('scroll', fadeImage);
-
 
 
 //image shingansai pan slide
@@ -163,7 +134,6 @@ function isScrolledIntoView(el) {
 }
 
 
-
 //image holbein set slide
 // Get the position of the image-set-section relative to the top of the page
 var imageSetSection = document.querySelector('.image-set-section');
@@ -181,7 +151,6 @@ window.addEventListener('scroll', function() {
 
 //image special set 1 slide
 const slideIn = document.querySelectorAll('.image-special-section1, .image-special-section2,.image-special-section3');
-
 
 function debounce(func, wait = 10, immediate = true) {
   var timeout;
@@ -217,7 +186,6 @@ window.addEventListener('scroll', debounce(checkSlide));
 
 checkSlide();
 
-
 //image hover mouse move zoom holbein review limited set
 const zoomImage = document.getElementById("zoom-image");
 const container = document.querySelector(".image-review-container");
@@ -233,8 +201,6 @@ container.addEventListener("mousemove", (e) => {
   zoomImage.style.transformOrigin = `${xPercent}% ${yPercent}%`;
 });
 
-
-
 //custom cursor
 const cursorFollower = document.querySelector('.cursor-follower');
 
@@ -242,9 +208,6 @@ document.addEventListener('mousemove', e => {
   cursorFollower.style.left = e.pageX + 'px';
   cursorFollower.style.top = e.pageY + 'px';
 });
-
-
-
 
 //reviewpaper images
 const reviewpapers = document.querySelectorAll('.reviewpaper');
@@ -260,50 +223,6 @@ function fadeInReviewpapers() {
 window.addEventListener('scroll', fadeInReviewpapers);
 window.addEventListener('load', fadeInReviewpapers);
 
-
-
-
-
-
-
-
-//petals falling
-//const screenWidth = window.innerWidth;
-//const screenHeight = window.innerHeight;
-
-//const petalContainer = document.querySelector('.petal-container');
-
-//for (let i = 1; i <= 40; i++) {
-  //const petal = document.createElement('div');
-  //petal.classList.add('petal', `petal-${i}`);
-  //petal.style.left = Math.floor(Math.random() * screenWidth) + 'px';
-  //petal.style.animationDelay = Math.floor(Math.random() * 7) + 's';
-  //petalContainer.appendChild(petal);
-//}
-
-
-
-//loading screen adjust
-// Get the button element
-//const btnReturnHome = document.querySelector('.btn-return-home');
-
-// Add a click event listener to the button
-//btnReturnHome.addEventListener('click', function(e) {
-  // Prevent the default link behavior
-  //e.preventDefault();
-
-  // Show the loading screen
-  //document.getElementById('loading-screen').classList.add('show');
-
-  // Wait for a short delay to simulate loading time
-  //setTimeout(function() {
-    // Hide the loading screen
-    //document.getElementById('loading-screen').classList.remove('show');
-
-    // Navigate
-    //window.location.href = 'https://fonts.google.com/specimen/Comfortaa/';
-  //}, 1000);
-//});
 
 
 
