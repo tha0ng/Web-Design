@@ -612,6 +612,23 @@ main{
   color: #ffffff;
 }
 
+
+/*Back to top button*/
+.button-container {
+  text-align: center;
+}
+#topBtn {
+  background-color: #fff3f6; /* pink color */
+  color: #000000; /* text color */
+  border: none; /* remove button border */
+  padding: 10px 20px; /* add padding */
+  font-size: 12px; /* increase font size */
+  border-radius: 5px; /* add rounded corners */
+  cursor: pointer; /* change cursor on hover */
+}
+#topBtn:hover {
+  background-color: #ed98c2; /* darker pink color on hover */
+}
 /* Scroll to the top of the page with a smooth transition */
 html {
   scroll-behavior: smooth;
